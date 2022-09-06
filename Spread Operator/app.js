@@ -27,10 +27,16 @@ const worldTradeCenters = {
     },
 };
 
-const AmsterdamCenters = { ...worldTradeCenters.netherlands.amsterdam};
-console.log(AmsterdamCenters);
-document.write(`<h3>Amsterdam Trade Centers:</h3><p>${Object.values(AmsterdamCenters)}</p><br />`);
+const amsterdamCenters = { ...worldTradeCenters.netherlands.amsterdam};
+console.log(amsterdamCenters);
+
+document.write(`<h2>Amsterdam Trade Centers</h2>`);
+for (const entry of Object.entries(amsterdamCenters)) {
+    document.write(`${entry[0]}: ${entry[1]} <br />`);
+};
 // console.log(worldTradeCenters.netherlands.amsterdam);
+// OR
+// document.write(`<h3>amsterdam Trade Centers:</h3><p>${Object.values(amsterdamCenters)}</p><br />`);
 
 
 
@@ -58,5 +64,10 @@ const someMovies = [
 
 const copyInnermostArray = [...someMovies[3][2]];
 console.log(copyInnermostArray);
-document.write(`<h3>Extracted Movies:</h3><p>${copyInnermostArray}</p>`);
+document.write(`<h2>Extracted Movies:</h2>`);
+for (let i = 0; i < copyInnermostArray.length; i++) {
+    document.write(`${copyInnermostArray[i]}<br />`);
+}
 // console.log(someMovies);
+// OR
+// document.write(`<h2>Extracted Movies:</h2><p>${copyInnermostArray}</p>`);
