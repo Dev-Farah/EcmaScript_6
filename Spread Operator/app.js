@@ -68,7 +68,7 @@ document.write(`<h2>Copied Movies:</h2>`);
 for (const index of copyInnermostArray) {
     document.write(`${index}<br />`);
 };
-// OR
+// OR (using for loop)
 // for (let i = 0; i < copyInnermostArray.length; i++) {
 //     document.write(`${copyInnermostArray[i]}<br />`);
 // };
