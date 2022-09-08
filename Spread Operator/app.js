@@ -65,9 +65,13 @@ const someMovies = [
 const copyInnermostArray = [...someMovies[3][2]];
 console.log(copyInnermostArray);
 document.write(`<h2>Copied Movies:</h2>`);
-for (let i = 0; i < copyInnermostArray.length; i++) {
-    document.write(`${copyInnermostArray[i]}<br />`);
-}
+for (const index of copyInnermostArray) {
+    document.write(`${index}<br />`);
+};
+// OR
+// for (let i = 0; i < copyInnermostArray.length; i++) {
+//     document.write(`${copyInnermostArray[i]}<br />`);
+// };
 // console.log(someMovies);
 // OR
 // document.write(`<h2>Copied Movies:</h2><p>${copyInnermostArray}</p>`);
