@@ -208,6 +208,8 @@ function showDetails() {
     productDetails.innerHTML = "";
     console.log(models.value);
     let getObject = mobiles.find(val => { if (val.model === models.value) { return val } });
+    // // OR
+    // let getObject = mobiles.filter(val => { if (val.model === models.value) { return val } })[0];
     let details = getObject.details;
     // console.log(getObject.src);
 
